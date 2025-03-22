@@ -1,68 +1,84 @@
 @import url("../components/MarketTrend.css");
-body {
-  /* Apply multiple radial gradients for a dynamic background */
-  background: 
+
+:root {
+  --bg-gradient: 
     radial-gradient(circle at 20% 30%, rgba(34, 17, 61, 0.9), transparent 70%),
     radial-gradient(circle at 80% 70%, rgba(17, 110, 87, 0.8), transparent 70%),
     radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.7), transparent 70%),
-    #080014; /* Fallback color */
+    #080014;
+  
+  --text-color: white;
+  --button-bg: #00cc99;
+}
 
-  /* Ensure the background covers the entire page */
+/* Light Theme */
+[data-theme="light"] {
+  --bg-gradient: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.8), transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(200, 200, 200, 0.8), transparent 70%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.9), transparent 70%),
+    #f0f0f0;
+
+  --text-color: black;
+  --button-bg: #007bff;
+}
+.hero {
+  text-align: center;
+  padding: 80px 0px;
+  overflow: hidden;
+}
+body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-
-/* 🔥 Ensures sections blend smoothly */
+/* 🔥 Ensure sections blend smoothly */
 section {
   overflow: hidden;
 }
 
-/* 🔥 Learn Crypto Section to blend with gradient */
+/* 🔥 Learn Crypto Section */
 .learn-crypto {
-  background: transparent; /* Remove the solid background */
+  background: transparent;
   padding: 40px 30px;
-  color: white;
+  color: var(--text-color);
   text-align: center;
   width: 100%;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 0px;
-    overflow: hidden;
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-p {
-    font-size:17px;
-    color:gray;
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
+p {
+  font-size: 17px;
+  color: gray;
+}
+
+/* Buttons */
+.button {
+  background: var(--button-bg);
+  padding: 15px 35px;
+  margin: 15px 10px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
 
 .button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
-
-.button{
-    background: #00cc99;
-    transition: all 0.3s ease-in-out;
-    padding: 15px 35px;
-    margin:15px 10px;
-    border-radius: 8px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    text-decoration: none;
-}
-  
