@@ -39,9 +39,11 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* 🔥 Ensure sections blend smoothly */
 section {
-  overflow: hidden;
+  width: 100%;
+  max-width: 100vw; /* Prevents overflow */
+  box-sizing: border-box; /* Ensures padding is included */
+  overflow-x: hidden; /* Hides extra width */
 }
 
 /* 🔥 Learn Crypto Section */
