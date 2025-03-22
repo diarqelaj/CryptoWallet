@@ -1,0 +1,103 @@
+.learn-crypto {
+  text-align: center;
+
+  color: white;
+}
+
+.learn-crypto h2,
+.learn-crypto p {
+  margin: 0; /* Remove default margins */
+  padding: 0 10px; /* Add slight padding to keep readability */
+}
+
+.learn-crypto .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 296px); /* 4 cards */
+  grid-template-rows: auto; /* Allow flexibility */
+  gap: 26px; /* Uniform spacing */
+  width: 1262px; /* Exact width (4 cards + 3 gaps) */
+  margin: 0 auto; /* Center grid */
+  justify-content: center;
+  align-items: start;
+}
+
+.learn-crypto .card {
+  width: 296px; /* Force each card to its correct size */
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; /* NO MORE OVERLAP */
+}
+
+.learn-crypto .card.featured {
+  grid-column: span 2;
+  width: 100%; /* Let grid decide */
+  height: 100%;
+}
+
+/* Fix Image Overflow */
+.learn-crypto .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+/* Optional: If things still act up, add this */
+.learn-crypto .grid > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+
+/* Card Hover Effect */
+.learn-crypto .card:hover {
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.learn-crypto .card .content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  text-align: left;
+}
+
+/* Category Label */
+.learn-crypto .card .category {
+  display: inline-block;
+  background: #6a0dad;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Responsive Grid Fixes */
+@media (max-width: 900px) {
+  .learn-crypto .grid {
+    grid-template-columns: repeat(2, 296px);
+    max-width: calc(2 * 296px + 26px); /* Adjust for 2 columns */
+  }
+
+  .learn-crypto .card.featured {
+    grid-column: span 2;
+    width: 618px;
+  }
+}
+
+@media (max-width: 600px) {
+  .learn-crypto .grid {
+    grid-template-columns: repeat(1, 296px);
+    max-width: 296px; /* Single column */
+  }
+
+  .learn-crypto .card.featured {
+    grid-column: span 1;
+    width: 296px;
+  }
+}

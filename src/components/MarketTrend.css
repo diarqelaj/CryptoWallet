@@ -1,0 +1,124 @@
+.market-trend {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08); /* Semi-transparent white */
+  backdrop-filter: blur(12px); /* Blur effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari Support */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    color: white;
+    text-align: left;
+    border: 1px solid rgba(200, 160, 255, 0.3);
+    width: 270px;
+    padding: 25px;
+    width: 280px;
+    min-height: 160px;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.18),
+        0 4px 12px rgba(103, 58, 183, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coin-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.coin-logo {
+    width: 32px;
+    height: 32px;
+}
+.coin-symbol {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.1);
+}
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d1d1d1;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+
+.coin-name {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.external-link {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.external-link svg {
+    color: white;
+    font-size: 16px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.change {
+    font-size: 14px;
+    font-weight: bold;
+}
+.positive {
+    color: #00ff99;
+    text-shadow: 0px 1px 4px rgba(0, 255, 153, 0.5);
+}
+
+.negative {
+    color: #ff5577;
+    text-shadow: 0px 1px 4px rgba(255, 85, 119, 0.5);
+}
+
+
+
+.chart-container {
+    position: absolute;
+    bottom: 15px;
+    right: 12px;
+    width: 90px;
+    height: 40px;
+}

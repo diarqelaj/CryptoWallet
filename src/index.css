@@ -1,0 +1,7 @@
+/* Global Styles - Ensures Consistent Background Across All Pages */
+body {
+  background: radial-gradient(circle, #310046, #190029);
+  color: white;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
