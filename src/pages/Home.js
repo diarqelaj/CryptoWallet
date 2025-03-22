@@ -21,6 +21,10 @@ function Home() {
         <Link to="/get-started" className="button">Get Started</Link>
       </section>
       <MarketTrend />
+      <Features />
+      <MarketUpdate />
+      <HowToGetStarted />
+      <LearnCrypto />
     </div>
   );
 }

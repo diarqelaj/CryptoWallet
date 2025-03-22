@@ -1,20 +1,71 @@
 .how-to-get-started {
-    text-align: center;
-    padding: 40px 20px; /* Added left/right padding */
-    margin: 40px 0; /* Added margin to separate it from other sections */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
-  
-  .how-to-get-started ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .how-to-get-started li {
-    background: #444;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    color: white;
-  }
-  
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.left p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn-start {
+  background: #00c896;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn-start:hover {
+  background: #00a77f;
+}
+
+.right {
+  flex: 1.2;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08); /* Glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.step-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: white;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.step p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}

@@ -1,57 +1,175 @@
-.market-trend {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .market-trend .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .card {
-    background: #181818;
+.market-update {
+  background: inherit;
+  backdrop-filter: blur(12px); /* Blur effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari Support */
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border */
+}
+
+/* Header */
+.market-update h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Categories */
+.crypto-categories {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.crypto-categories button {
+  background: #2a2847;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.crypto-categories button:hover,
+.crypto-categories .active {
+  background: #8a4fff;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px;
+  border-radius: 8px;
+  border: none;
+  background: #1c1b3b;
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b3b3b3;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: inherit;
+  backdrop-filter: blur(12px); /* Blur effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari Support */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: #1a1735;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  font-weight: 600;
+}
+
+tr {
+  border-bottom: 1px solid #22203d;
+}
+
+/* Coin Details */
+td img {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.symbol {
+  color: #b3b3b3;
+  font-size: 0.85rem;
+}
+
+/* Positive & Negative Changes */
+.positive {
+  color: #32e6a8;
+}
+
+.negative {
+  color: #ff4c4c;
+}
+
+/* Market Stats (Mini Chart) */
+td .Sparklines {
+  display: block;
+  width: 80px;
+  height: 30px;
+}
+
+/* Trade Button */
+.trade-btn {
+  background: #32e6a8;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.trade-btn:hover {
+  background: #23c489;
+}
+
+/* See All Coins */
+.see-all {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  color: #32e6a8;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.see-all:hover {
+  color: #23c489;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .market-update {
     padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
   }
   
-  .card:hover {
-    transform: scale(1.05);
+  th, td {
+    padding: 10px;
+    font-size: 0.85rem;
   }
-  
-  .coin-logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+
+  .crypto-categories {
+    flex-wrap: wrap;
   }
-  
-  .price {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .change {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
-  .positive {
-    color: #00c851;
-  }
-  
-  .negative {
-    color: #ff4444;
-  }
-  
-  .sparkline img {
+
+  .search-bar {
     width: 100%;
-    margin-top: 10px;
   }
-  
+}
