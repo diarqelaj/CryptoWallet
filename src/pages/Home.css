@@ -1,34 +1,36 @@
 @import url("../components/MarketTrend.css");
-
 body {
-    background:
-      /* Left purple glow (matches reference's soft bloom) */
-      radial-gradient(
-        circle at 28% 50%, /* Adjusted from 30% for asymmetric emphasis */
-        rgba(103, 58, 183, 0.92) 0%,    /* Slightly brighter purple */
-        rgba(103, 58, 183, 0.25) 25%,   /* Faster fade to match reference */
-        transparent 55%                  /* Smoher blend into darkness */
-      ),
-      /* Right dark gradient (sharper, deeper contrast) */
-      radial-gradient(
-        circle at 72% 50%, /* Wider offset for asymmetry */
-        rgba(10, 10, 30, 0.98) 5%,      /* Near-opaque start for depth */
-        #080014 35%,                    /* Faster transition to solid */
-        #080014 100%
-      ),
-      /* Base color (matches darkest part of reference) */
-      #080014;
-  
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-section {
-    overflow: hidden;
+  /* Apply multiple radial gradients for a dynamic background */
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(34, 17, 61, 0.9), transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(17, 110, 87, 0.8), transparent 70%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.7), transparent 70%),
+    #080014; /* Fallback color */
+
+  /* Ensure the background covers the entire page */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+
+/* 🔥 Ensures sections blend smoothly */
+section {
+  overflow: hidden;
+}
+
+/* 🔥 Learn Crypto Section to blend with gradient */
+.learn-crypto {
+  background: transparent; /* Remove the solid background */
+  padding: 40px 30px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
 .hero {
     text-align: center;
     padding: 80px 0px;
