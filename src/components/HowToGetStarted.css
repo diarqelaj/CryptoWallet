@@ -1,0 +1,20 @@
+.how-to-get-started {
+    text-align: center;
+    padding: 40px 20px; /* Added left/right padding */
+    margin: 40px 0; /* Added margin to separate it from other sections */
+}
+
+  
+  .how-to-get-started ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .how-to-get-started li {
+    background: #444;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+  }
+  

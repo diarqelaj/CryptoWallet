@@ -1,0 +1,20 @@
+.learn-crypto {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 40px 0;
+}
+  
+  .learn-crypto .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .learn-crypto .card {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+  }
+  

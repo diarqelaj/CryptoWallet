@@ -1,0 +1,57 @@
+.market-trend {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .market-trend .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .coin-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .change {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .positive {
+    color: #00c851;
+  }
+  
+  .negative {
+    color: #ff4444;
+  }
+  
+  .sparkline img {
+    width: 100%;
+    margin-top: 10px;
+  }
+  

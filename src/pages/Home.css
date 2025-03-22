@@ -1,0 +1,66 @@
+@import url("../components/MarketTrend.css");
+
+body {
+    background:
+      /* Left purple glow (matches reference's soft bloom) */
+      radial-gradient(
+        circle at 28% 50%, /* Adjusted from 30% for asymmetric emphasis */
+        rgba(103, 58, 183, 0.92) 0%,    /* Slightly brighter purple */
+        rgba(103, 58, 183, 0.25) 25%,   /* Faster fade to match reference */
+        transparent 55%                  /* Smoher blend into darkness */
+      ),
+      /* Right dark gradient (sharper, deeper contrast) */
+      radial-gradient(
+        circle at 72% 50%, /* Wider offset for asymmetry */
+        rgba(10, 10, 30, 0.98) 5%,      /* Near-opaque start for depth */
+        #080014 35%,                    /* Faster transition to solid */
+        #080014 100%
+      ),
+      /* Base color (matches darkest part of reference) */
+      #080014;
+  
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+section {
+    overflow: hidden;
+}
+.hero {
+    text-align: center;
+    padding: 80px 0px;
+    overflow: hidden;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+p {
+    font-size:17px;
+    color:gray;
+}
+
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.button{
+    background: #00cc99;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 35px;
+    margin:15px 10px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+  
