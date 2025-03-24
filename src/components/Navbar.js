@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState, useContext } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { ThemeContext } from "../context/ThemeContext";  // ✅ Import global theme
+import { ThemeContext } from "../context/ThemeContext"; 
 import "../css/Navbar.css";
 
 function Navbar() {
@@ -11,7 +11,7 @@ function Navbar() {
   const [selectedLanguage, setSelectedLanguage] = useState(storedLanguage);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const { theme, toggleTheme } = useContext(ThemeContext); // ✅ Get theme from context
+  const { theme, toggleTheme } = useContext(ThemeContext); 
 
   const changeLanguage = (lng) => {
     setSelectedLanguage(lng);
@@ -31,7 +31,7 @@ function Navbar() {
 
       <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
-        <Link to="/business" onClick={() => setIsMenuOpen(false)}>{t("businesses")}</Link>
+        <Link to="/businesses" onClick={() => setIsMenuOpen(false)}>{t("businesses")}</Link>
         <Link to="/trade" onClick={() => setIsMenuOpen(false)}>{t("trade")}</Link>
         <Link to="/market" onClick={() => setIsMenuOpen(false)}>{t("market")}</Link>
         <Link to="/learn" onClick={() => setIsMenuOpen(false)}>{t("learn")}</Link>
