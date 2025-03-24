@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import GetStarted from "./pages/GetStarted";
 import Navbar from "./components/Navbar";
 import Businesses from "./pages/Businesses";
+import TradingViewWidget from "./pages/TradingViewWidget"; 
 
 function App() {
   const themeContext = useContext(ThemeContext);
@@ -15,6 +16,7 @@ function App() {
   }
 
   const { theme } = themeContext; 
+
   return (
     <div data-theme={theme}> 
       <Router>
@@ -23,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/businesses" element={<Businesses />} />
           <Route path="/get-started" element={<GetStarted />} />
+          <Route path="/trade" element={<TradingViewWidget theme={theme} />} />
         </Routes>
       </Router>
     </div>

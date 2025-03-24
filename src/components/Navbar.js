@@ -5,6 +5,9 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { ThemeContext } from "../context/ThemeContext"; 
 import "../css/Navbar.css";
 
+
+
+
 function Navbar() {
   const { t, i18n } = useTranslation("navbar");
   const storedLanguage = localStorage.getItem("language") || "en";
@@ -32,7 +35,7 @@ function Navbar() {
       <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
         <Link to="/businesses" onClick={() => setIsMenuOpen(false)}>{t("businesses")}</Link>
-        <Link to="/trade" onClick={() => setIsMenuOpen(false)}>{t("trade")}</Link>
+        <Link to="/trade" className="nav-link">Trade</Link>
         <Link to="/market" onClick={() => setIsMenuOpen(false)}>{t("market")}</Link>
         <Link to="/learn" onClick={() => setIsMenuOpen(false)}>{t("learn")}</Link>
 
