@@ -4,6 +4,7 @@ import { ThemeContext } from "./ThemeContext"; // Import ThemeContext
 import Home from "./pages/Home";
 import GetStarted from "./pages/GetStarted";
 import Navbar from "./components/Navbar";
+import Businesses from "./pages/Businesses";
 
 function App() {
   const { theme } = useContext(ThemeContext); // Get current theme
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/businesses" element={<Businesses />} />
           <Route path="/get-started" element={<GetStarted />} />
         </Routes>
       </Router>

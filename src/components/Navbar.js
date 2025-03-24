@@ -6,21 +6,17 @@ import "../css/Navbar.css";
 
 function Navbar() {
   const { t, i18n } = useTranslation("navbar");
-  
-
   const storedLanguage = localStorage.getItem("language") || "en";
   const [selectedLanguage, setSelectedLanguage] = useState(storedLanguage);
-  
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Mobile Menu State
 
   useEffect(() => {
-    // Apply stored theme
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
   useEffect(() => {
-    // Set the selected language when component mounts
     i18n.changeLanguage(storedLanguage);
   }, [i18n, storedLanguage]);
 
@@ -37,29 +33,49 @@ function Navbar() {
   return (
     <nav className="navbar">
       <h2 className="logo">CryptoCap</h2>
-      <div className="nav-links">
-        <Link to="/">{t("home")}</Link>
-        <Link to="/business">{t("businesses")}</Link>
-        <Link to="/trade">{t("trade")}</Link>
-        <Link to="/market">{t("market")}</Link>
-        <Link to="/learn">{t("learn")}</Link>
+
+      {/* Animated Hamburger Menu */}
+      <div className={`menu-icon ${isMenuOpen ? "open" : ""}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+
+      {/* Navbar Links & Actions (Now Includes Language & Theme in Mobile) */}
+      <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
+        <Link to="/" onClick={() => setIsMenuOpen(false)}>{t("home")}</Link>
+        <Link to="/business" onClick={() => setIsMenuOpen(false)}>{t("businesses")}</Link>
+        <Link to="/trade" onClick={() => setIsMenuOpen(false)}>{t("trade")}</Link>
+        <Link to="/market" onClick={() => setIsMenuOpen(false)}>{t("market")}</Link>
+        <Link to="/learn" onClick={() => setIsMenuOpen(false)}>{t("learn")}</Link>
+
+        <div className="mobile-actions">
+          <select className="lang-btn" value={selectedLanguage} onChange={(e) => changeLanguage(e.target.value)}>
+            <option value="en">🇬🇧 EN</option>
+            <option value="es">🇪🇸 ES</option>
+            <option value="fr">🇫🇷 FR</option>
+          </select>
+
+          <button className="theme-toggle" onClick={toggleTheme}>
+             {theme === "dark" ? <FaSun /> : <FaMoon />}
+          </button>
+
+          <button className="login-btn">{t("login")}</button>
+        </div>
+      </div>
+
       <div className="nav-actions">
-        <label htmlFor="language-selector"></label>
-        <select
-          id="language-selector"
-          className="lang-btn"
-          value={selectedLanguage} // Ensures dropdown reflects selected language
-          onChange={(e) => changeLanguage(e.target.value)}
-        >
+        <select className="lang-btn desktop-only" value={selectedLanguage} onChange={(e) => changeLanguage(e.target.value)}>
           <option value="en">🇬🇧 EN</option>
           <option value="es">🇪🇸 ES</option>
           <option value="fr">🇫🇷 FR</option>
         </select>
-        <button className="theme-toggle" onClick={toggleTheme}>
-          {theme === "dark" ? <FaSun /> : <FaMoon />}
+
+        <button className="theme-toggle desktop-only" onClick={toggleTheme}>
+           {theme === "dark" ? <FaSun /> : <FaMoon />}
         </button>
-        <button className="login-btn">{t("login")}</button>
+
+        <button className="login-btn desktop-only">{t("login")}</button>
       </div>
     </nav>
   );

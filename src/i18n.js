@@ -31,6 +31,10 @@ import featuresEN from "./locales/en/features.json";
 import featuresES from "./locales/es/features.json";
 import featuresFR from "./locales/fr/features.json";
 
+import businessesEN from "./locales/en/businesses.json"; 
+import businessesES from "./locales/es/businesses.json";  
+import businessesFR from "./locales/fr/businesses.json";  
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -43,7 +47,8 @@ i18n
         navbar: navbarEN,
         marketUpdate: marketUpdateEN,
         howToGetStarted: howToGetStartedEN,
-        features: featuresEN
+        features: featuresEN,
+        businesses: businessesEN,
       },
       es: {
         learnCrypto: learnCryptoES,
@@ -52,7 +57,8 @@ i18n
         navbar: navbarES,
         marketUpdate: marketUpdateES,
         howToGetStarted: howToGetStartedES,
-        features: featuresES
+        features: featuresES,
+        businesses: businessesES, 
       },
       fr: {
         learnCrypto: learnCryptoFR,
@@ -61,7 +67,8 @@ i18n
         navbar: navbarFR,
         marketUpdate: marketUpdateFR,
         howToGetStarted: howToGetStartedFR,
-        features: featuresFR
+        features: featuresFR,
+        businesses: businessesFR, 
       }
     },
     fallbackLng: "en",
@@ -72,7 +79,8 @@ i18n
       "navbar",
       "marketUpdate",
       "howToGetStarted",
-      "features"
+      "features",
+      "businesses" 
     ],
     defaultNS: "marketUpdate",
     detection: {
