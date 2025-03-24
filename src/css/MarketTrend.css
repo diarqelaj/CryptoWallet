@@ -136,3 +136,103 @@
     width: 90px;
     height: 40px;
 }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    backdrop-filter: blur(10px);
+}
+.modal-content {
+    background-color: var(--modal);
+    color: var(--text-color);
+    padding: 40px;
+    border-radius: 16px;
+    min-width: 500px;
+    max-width: 750px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: popIn 0.3s ease-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+    color: var(--negative-color);
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.modal-price {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modal-change {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-change.positive {
+    color: var(--positive-color);
+}
+
+.modal-change.negative {
+    color: #ff5577;
+}
+
+
+.modal-chart {
+    margin-top: 20px;
+    width: 100%;
+    height: 180px;
+}
+
+.modal-content a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modal-content a:hover {
+    color: var(--text-color);
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

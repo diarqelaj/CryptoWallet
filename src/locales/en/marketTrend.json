@@ -2,6 +2,7 @@
     "title": "Market Trend",
     "loading": "Loading market data...",
     "price": "Price",
-    "change": "24h Change"
+    "change": "24h Change",
+    "view": "View More"
   }
   

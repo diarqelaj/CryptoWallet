@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import "../css/Features.css";
 import { FaWallet, FaShieldAlt, FaBitcoin, FaBook } from "react-icons/fa";
-import "../i18n"; // Import i18n configuration
+import "../i18n"; 
 
 function Features() {
-  const { t } = useTranslation("features"); // Use the "features" namespace
+  const { t } = useTranslation("features"); 
 
   return (
     <section className="features">

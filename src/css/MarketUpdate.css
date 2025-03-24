@@ -11,13 +11,11 @@
 
 }
 
-/* Header */
 .market-update h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
-/* Categories */
 .crypto-categories {
   display: flex;
   gap: 10px;
@@ -67,7 +65,7 @@
   color: var(--price-text);
 }
 
-/* Table */
+
 table {
   width: 100%;
   border-collapse: collapse;

@@ -10,6 +10,7 @@ import {
   Tooltip,
   CategoryScale,
 } from "chart.js";
+import { FaArrowRight, FaTimes } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import "../css/MarketTrend.css";
 
@@ -22,6 +23,7 @@ function MarketTrend() {
   const { t } = useTranslation("marketTrend");
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedCoin, setSelectedCoin] = useState(null);
 
   useEffect(() => {
     const fetchMarketData = async () => {
@@ -39,6 +41,8 @@ function MarketTrend() {
     fetchMarketData();
   }, []);
 
+  console.log("Selected Coin:", selectedCoin);
+
   return (
     <section className="market-trend">
       <h2>{t("title")}</h2>
@@ -48,7 +52,14 @@ function MarketTrend() {
       ) : (
         <div className="cards">
           {coins.map((coin) => (
-            <div className="card" key={coin.id}>
+            <div
+              className="card"
+              key={coin.id}
+              onClick={() => {
+                console.log("Card clicked:", coin);
+                setSelectedCoin(coin);
+              }}
+            >
               <div className="top-section">
                 <div className="coin-info">
                   <img src={coin.image} alt={coin.name} className="coin-logo" />
@@ -61,6 +72,7 @@ function MarketTrend() {
                     href={`https://www.coingecko.com/en/coins/${coin.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()} // Prevents card click from firing
                   >
                     <FaArrowUpRightFromSquare />
                   </a>
@@ -79,6 +91,8 @@ function MarketTrend() {
           ))}
         </div>
       )}
+
+      {selectedCoin && <CoinModal coin={selectedCoin} onClose={() => setSelectedCoin(null)} />}
     </section>
   );
 }
@@ -108,5 +122,43 @@ function MiniChart({ sparkline }) {
 
   return <Line data={data} options={options} className="mini-chart" />;
 }
+
+function CoinModal({ coin, onClose }) {
+  const { t } = useTranslation("marketTrend");
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="close-btn" onClick={onClose}>
+          <FaTimes />
+        </button>
+        <h2>
+          {coin.name} ({coin.symbol.toUpperCase()})
+        </h2>
+        <p className="modal-price">
+          {t("price")}: ${coin.current_price.toLocaleString()}
+        </p>
+        <p
+          className={`modal-change ${
+            coin.price_change_percentage_24h >= 0 ? "positive" : "negative"
+          }`}
+        >
+          {t("change")}: {coin.price_change_percentage_24h.toFixed(2)}%
+        </p>
+        <div className="modal-chart">
+          <MiniChart sparkline={coin.sparkline_in_7d.price} />
+        </div>
+        <a
+          href={`https://www.coingecko.com/en/coins/${coin.id}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("view")} <FaArrowRight />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 
 export default MarketTrend;

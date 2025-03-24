@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
@@ -7,6 +8,8 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background 0.3s ease;
+  z-index: 3000;
+  
 }
 
 [data-theme="light"] .navbar {
@@ -30,6 +33,7 @@
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
+  z-index: 2000;
 }
 
 .nav-links a:hover {
@@ -39,6 +43,7 @@
 .nav-actions {
   display: flex;
   gap: 15px;
+  z-index: 1;
 }
 
 .lang-btn {
