@@ -5,9 +5,10 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 50px 20px;
+  gap: 20px; /* ✅ Added gap for spacing */
 }
 
-
+/* Left Section */
 .left {
   flex: 1;
   text-align: left;
@@ -16,16 +17,16 @@
 .left h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: var(--text-color); 
+  color: var(--text-color);
 }
 
 .left p {
-  color: var(--price-text); 
+  color: var(--price-text);
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
-
+/* Button */
 .btn-start {
   background: var(--button-bg);
   color: var(--price-text);
@@ -38,13 +39,15 @@
 }
 
 .btn-start:hover {
-  background: var(--button-hover); 
+  background: var(--button-hover);
 }
 
+/* Right Section */
 .right {
   flex: 1.2;
 }
 
+/* Step Cards */
 .step {
   display: flex;
   align-items: center;
@@ -56,32 +59,142 @@
   margin-bottom: 15px;
   border: 1px solid var(--card-border);
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
+.step:hover {
+  transform: scale(1.03);
+}
 
+/* Step Icons */
 .step-icon {
   font-size: 24px;
   margin-right: 15px;
   color: var(--text-color);
 }
 
-
+/* Step Text */
 .step h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
   color: var(--text-color);
 }
 
-
 .step p {
-  color: var(--price-text); 
+  color: var(--price-text);
   font-size: 0.9rem;
 }
 
+/* ✅ Dark & Light Mode Effects */
 [data-theme="dark"] .step {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="light"] .step {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Tablet & Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .how-to-get-started {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left h2 {
+    font-size: 1.8rem;
+  }
+
+  .left p {
+    font-size: 0.95rem;
+  }
+
+  .btn-start {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .step {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .step-icon {
+    margin-bottom: 10px;
+    margin-right: 0;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-to-get-started {
+    padding: 10px 15px;
+  }
+
+  .left h2 {
+    font-size: 1.6rem;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+  }
+
+  .btn-start {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .step {
+    padding: 15px;
+  }
+
+  .step h3 {
+    font-size: 1.1rem;
+  }
+
+  .step p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-to-get-started {
+    padding: 30px 20px;
+  }
+
+  .left h2 {
+    font-size: 1.4rem;
+  }
+
+  .left p {
+    font-size: 0.85rem;
+  }
+
+  .btn-start {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+
+  .step {
+    padding: 12px;
+  }
+
+  .step-icon {
+    font-size: 24px;
+  }
+
+  .step h3 {
+    font-size: 1rem;
+  }
+
+  .step p {
+    font-size: 0.8rem;
+  }
 }

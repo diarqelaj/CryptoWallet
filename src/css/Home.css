@@ -65,15 +65,14 @@
 body {
   background: var(--bg-gradient);
   color: var(--text-color);
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  transition: background 0.3s ease, color 0.3s ease;
-  z-index: 5000;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 
 section {
   width: 100%;
