@@ -23,9 +23,9 @@ npm start
 ```
 📸 Screenshots
 Feature	Preview 
-Homepage	![image](https://github.com/user-attachments/assets/a8ecf5e6-1d1b-40a5-bf18-3b49e56aa3c5)- Dark Mode, ![image](https://github.com/user-attachments/assets/ab4c3723-3377-490a-8b9e-32280e882bf5) - Light Mode
+Homepage	![image](https://github.com/user-attachments/assets/a8ecf5e6-1d1b-40a5-bf18-3b49e56aa3c5)- Dark Mode, ![image](https://github.com/user-attachments/assets/ab4c3723-3377-490a-8b9e-32280e882bf5)-Light Mode
 Trade Dashboard	![image](https://github.com/user-attachments/assets/bf4f8aa7-7649-4f82-b6ad-e3628c84f0ba)	
-Multilingual UI	![image](https://github.com/user-attachments/assets/91c7534a-991b-4d1c-a98e-9353f63ef9fe) ![image](https://github.com/user-attachments/assets/5856736e-61f3-41a6-b5f6-fad4c5442c97)
+Multilingual UI	![image](https://github.com/user-attachments/assets/91c7534a-991b-4d1c-a98e-9353f63ef9fe) 
 
 
 
