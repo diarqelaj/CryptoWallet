@@ -1,4 +1,4 @@
-# CryptoCap 🚀 - Frontend Focused (Progress 45%)
+# CryptoCap 🚀 - Frontend Focused (Progress 85%)
 
 A modern **cryptocurrency portfolio tracker** built with **React**.  
 This project focuses on the **frontend**—while a full wallet system takes time to develop, this version emphasizes a smooth **user interface, multilingual support, and theme customization**.
