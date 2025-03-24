@@ -1,0 +1,24 @@
+{
+    "title": "Market Update",
+    "categories": {
+      "popular": "Popular",
+      "metaverse": "Metaverse",
+      "entertainment": "Entertainment",
+      "energy": "Energy",
+      "gaming": "Gaming",
+      "music": "Music",
+      "seeAll": "See All 12+"
+    },
+    "searchPlaceholder": "Search Coin",
+    "tableHeaders": {
+      "no": "No",
+      "name": "Name",
+      "lastPrice": "Last Price",
+      "change": "Change",
+      "marketStats": "Market Stats",
+      "trade": "Trade"
+    },
+    "tradeButton": "Trade",
+    "seeAllCoins": "See All Coins"
+  }
+  

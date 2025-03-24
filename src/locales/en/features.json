@@ -1,0 +1,24 @@
+{
+    "title": "CryptoCap Amazing Features",
+    "description": "Explore sensational features to prepare your best investment in cryptocurrency.",
+    "features": {
+      "portfolio": {
+        "title": "Manage Portfolio",
+        "description": "Buy and sell popular digital currencies, keep track of them in one place."
+      },
+      "security": {
+        "title": "Protected Securely",
+        "description": "All cash balances are covered by FDIC insurance, up to a maximum of $250,000."
+      },
+      "variety": {
+        "title": "Cryptocurrency Variety",
+        "description": "Supports a variety of the most popular digital currencies and always updates."
+      },
+      "learning": {
+        "title": "Learn Best Practice",
+        "description": "Easy to know how cryptocurrency works and friendly to newbies."
+      }
+    },
+    "seeMore": "See Explained →"
+  }
+  

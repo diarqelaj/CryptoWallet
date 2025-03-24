@@ -1,0 +1,24 @@
+{
+    "title": "Mise à jour du marché",
+    "categories": {
+      "popular": "Populaire",
+      "metaverse": "Métaverse",
+      "entertainment": "Divertissement",
+      "energy": "Énergie",
+      "gaming": "Jeux",
+      "music": "Musique",
+      "seeAll": "Voir les 12+"
+    },
+    "searchPlaceholder": "Rechercher une pièce",
+    "tableHeaders": {
+      "no": "N°",
+      "name": "Nom",
+      "lastPrice": "Dernier prix",
+      "change": "Changement",
+      "marketStats": "Statistiques du marché",
+      "trade": "Échanger"
+    },
+    "tradeButton": "Échanger",
+    "seeAllCoins": "Voir toutes les pièces"
+  }
+  

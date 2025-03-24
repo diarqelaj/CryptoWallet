@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import MarketTrend from "../components/MarketTrend";
 import Features from "../components/Features";
 import MarketUpdate from "../components/MarketUpdate";
@@ -12,13 +13,15 @@ import "../css/LearnCrypto.css";
 import "../css/Home.css";
 
 function Home() {
+  const { t } = useTranslation("home");
+
   return (
     <div className="home">
       <section className="hero">
-        <h1>Start and Build Your Crypto Portfolio Here</h1>
-        <p>Only at CryptoCap, you can build a good portfolio and learn<br></br> best practices about cryptocurrency.</p>
-        <br></br>
-        <Link to="/get-started" className="button">Get Started</Link>
+        <h1>{t("heroTitle")}</h1>
+        <p>{t("heroSubtitle")}</p>
+        <br />
+        <Link to="/get-started" className="button">{t("getStarted")}</Link>
       </section>
       <MarketTrend />
       <Features />

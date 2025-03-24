@@ -1,0 +1,24 @@
+{
+    "title": "Características Asombrosas de CryptoCap",
+    "description": "Explora características sensacionales para preparar tu mejor inversión en criptomonedas.",
+    "features": {
+      "portfolio": {
+        "title": "Gestionar Portafolio",
+        "description": "Compra y vende monedas digitales populares, manteniéndolas en un solo lugar."
+      },
+      "security": {
+        "title": "Protegido Seguramente",
+        "description": "Todos los saldos en efectivo están cubiertos por un seguro FDIC, hasta un máximo de $250,000."
+      },
+      "variety": {
+        "title": "Variedad de Criptomonedas",
+        "description": "Soporta una variedad de las monedas digitales más populares y siempre actualizadas."
+      },
+      "learning": {
+        "title": "Aprender Buenas Prácticas",
+        "description": "Fácil de entender cómo funciona la criptomoneda y amigable para principiantes."
+      }
+    },
+    "seeMore": "Ver Explicación →"
+  }
+  

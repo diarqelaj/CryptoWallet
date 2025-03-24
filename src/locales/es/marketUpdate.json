@@ -1,0 +1,24 @@
+{
+    "title": "Actualización del mercado",
+    "categories": {
+      "popular": "Popular",
+      "metaverse": "Metaverso",
+      "entertainment": "Entretenimiento",
+      "energy": "Energía",
+      "gaming": "Juegos",
+      "music": "Música",
+      "seeAll": "Ver los 12+"
+    },
+    "searchPlaceholder": "Buscar moneda",
+    "tableHeaders": {
+      "no": "No",
+      "name": "Nombre",
+      "lastPrice": "Último precio",
+      "change": "Cambio",
+      "marketStats": "Estadísticas del mercado",
+      "trade": "Operar"
+    },
+    "tradeButton": "Operar",
+    "seeAllCoins": "Ver todas las monedas"
+  }
+  

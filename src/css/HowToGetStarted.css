@@ -7,6 +7,7 @@
   padding: 50px 20px;
 }
 
+
 .left {
   flex: 1;
   text-align: left;
@@ -15,17 +16,19 @@
 .left h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: var(--text-color); 
 }
 
 .left p {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--price-text); 
   font-size: 1rem;
   margin-bottom: 20px;
 }
 
+
 .btn-start {
-  background: #00c896;
-  color: white;
+  background: var(--button-bg);
+  color: var(--price-text);
   padding: 12px 20px;
   border-radius: 8px;
   border: none;
@@ -35,7 +38,7 @@
 }
 
 .btn-start:hover {
-  background: #00a77f;
+  background: var(--button-hover); 
 }
 
 .right {
@@ -45,27 +48,40 @@
 .step {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.08); /* Glass effect */
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--card-border);
+  cursor: pointer;
 }
+
 
 .step-icon {
   font-size: 24px;
   margin-right: 15px;
-  color: white;
+  color: var(--text-color);
 }
+
 
 .step h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
+  color: var(--text-color);
 }
 
+
 .step p {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--price-text); 
   font-size: 0.9rem;
+}
+
+[data-theme="dark"] .step {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] .step {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }

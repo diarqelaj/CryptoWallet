@@ -1,13 +1,14 @@
 .market-update {
-  background: inherit;
-  backdrop-filter: blur(12px); /* Blur effect */
-  -webkit-backdrop-filter: blur(12px); /* Safari Support */
-  color: white;
+  background: var(--card-bg);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  color: var(--text-color); 
   padding: 40px;
   border-radius: 12px;
   max-width: 1100px;
   margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border */
+  border: 1px solid var(--card-border); 
+
 }
 
 /* Header */
@@ -24,8 +25,7 @@
 }
 
 .crypto-categories button {
-  background: #2a2847;
-  color: white;
+  background: var(--coin-name-bg);
   border: none;
   padding: 8px 14px;
   border-radius: 8px;
@@ -36,25 +36,27 @@
 
 .crypto-categories button:hover,
 .crypto-categories .active {
-  background: #8a4fff;
+  background: var(--button-bg); 
 }
 
-/* Search Bar */
+
 .search-bar {
   position: relative;
-  width: 280px;
   margin-left: auto;
+  padding:auto;
   margin-bottom: 20px;
-}
+  width: 200px; 
+  }
+
 
 .search-bar input {
   width: 100%;
   padding: 10px;
   padding-left: 35px;
   border-radius: 8px;
-  border: none;
-  background: #1c1b3b;
-  color: white;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--text-color);
 }
 
 .search-icon {
@@ -62,22 +64,22 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #b3b3b3;
+  color: var(--price-text);
 }
 
 /* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  background: inherit;
-  backdrop-filter: blur(12px); /* Blur effect */
-  -webkit-backdrop-filter: blur(12px); /* Safari Support */
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
   overflow: hidden;
 }
 
 thead {
-  background: #1a1735;
+  background: var(--card-border);
 }
 
 th, td {
@@ -88,13 +90,13 @@ th, td {
 
 th {
   font-weight: 600;
+  color: var(--text-color);
 }
 
 tr {
-  border-bottom: 1px solid #22203d;
+  border-bottom: 1px solid var(--card-border);
 }
 
-/* Coin Details */
 td img {
   width: 26px;
   height: 26px;
@@ -103,29 +105,28 @@ td img {
 }
 
 .symbol {
-  color: #b3b3b3;
+  color: var(--price-text);
   font-size: 0.85rem;
 }
 
-/* Positive & Negative Changes */
+
 .positive {
-  color: #32e6a8;
+  color: var(--positive-color);
 }
 
 .negative {
   color: #ff4c4c;
 }
 
-/* Market Stats (Mini Chart) */
 td .Sparklines {
   display: block;
   width: 80px;
   height: 30px;
 }
 
-/* Trade Button */
+
 .trade-btn {
-  background: #32e6a8;
+  background: var(--button-bg);
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
@@ -136,25 +137,23 @@ td .Sparklines {
 }
 
 .trade-btn:hover {
-  background: #23c489;
+  background: var(--button-hover);
 }
 
-/* See All Coins */
 .see-all {
   display: block;
   text-align: left;
   margin-top: 20px;
-  color: #32e6a8;
+  color: var(--button-bg);
   font-weight: bold;
   text-decoration: none;
   font-size: 0.9rem;
 }
 
 .see-all:hover {
-  color: #23c489;
+  color: var(--positive-color);
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
   .market-update {
     padding: 20px;
@@ -172,4 +171,12 @@ td .Sparklines {
   .search-bar {
     width: 100%;
   }
+}
+
+[data-theme="dark"] .market-update {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] .market-update {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }

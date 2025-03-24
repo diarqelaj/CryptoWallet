@@ -1,9 +1,8 @@
-/* src/components/Features.css */
 .features {
   text-align: center;
-  padding: 50px 20px;
-  background: inherit;
-  color: #fff;
+  padding: 50px 10px;
+  background: var(--card-bg);
+  color: var(--text-color); 
 }
 
 .features h2 {
@@ -12,7 +11,7 @@
 }
 
 .features p {
-  color: #b3b3b3;
+  color: var(--price-text); 
   font-size: 1rem;
   margin-bottom: 40px;
 }
@@ -25,22 +24,16 @@
 }
 
 .feature-item {
-  background: rgba(255, 255, 255, 0.08); /* Semi-transparent white */
-  backdrop-filter: blur(12px); /* Blur effect */
-  -webkit-backdrop-filter: blur(12px); /* Safari Support */
+  background: var(--card-bg); 
   border-radius: 12px;
   padding: 30px;
   width: 250px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--card-shadow); 
   position: relative;
 }
 
-.feature-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
-}
 
 .feature-item h3 {
   font-size: 1.3rem;
@@ -49,25 +42,25 @@
 
 .feature-item p {
   font-size: 0.9rem;
-  color: #b3b3b3;
+  color: var(--price-text); 
 }
 
 .feature-item a {
   display: inline-block;
   margin-top: 10px;
-  color: #32e6a8;
+  color: var(--button-bg);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .feature-item a:hover {
-  color: #23c489;
+  color: var(--positive-color); 
 }
 
-/* Add styles for the icons */
+
 .feature-icon {
   font-size: 2rem;
-  color: #32e6a8;
+  color: var(--button-bg);
   margin-bottom: 10px;
 }

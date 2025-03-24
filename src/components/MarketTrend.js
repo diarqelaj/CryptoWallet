@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -18,6 +19,7 @@ const COINGECKO_API =
   "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=true";
 
 function MarketTrend() {
+  const { t } = useTranslation("marketTrend");
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -39,35 +41,37 @@ function MarketTrend() {
 
   return (
     <section className="market-trend">
-      <h2>Market Trend</h2>
+      <h2>{t("title")}</h2>
 
       {loading ? (
-        <p>Loading market data...</p>
+        <p>{t("loading")}</p>
       ) : (
         <div className="cards">
           {coins.map((coin) => (
             <div className="card" key={coin.id}>
               <div className="top-section">
-                {/* Coin Info */}
                 <div className="coin-info">
                   <img src={coin.image} alt={coin.name} className="coin-logo" />
                   <h3 className="coin-symbol">{coin.symbol.toUpperCase()}</h3>
                   <span className="coin-name">{coin.name}</span>
                 </div>
 
-                {/* External Link Arrow Icon */}
                 <div className="external-link">
-                  <FaArrowUpRightFromSquare />
+                  <a
+                    href={`https://www.coingecko.com/en/coins/${coin.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaArrowUpRightFromSquare />
+                  </a>
                 </div>
               </div>
-
-              {/* Price & Change */}
-              <p className="price">${coin.current_price.toLocaleString()}</p>
+              <p className="price">
+                {t("price")}: ${coin.current_price.toLocaleString()}
+              </p>
               <p className={`change ${coin.price_change_percentage_24h >= 0 ? "positive" : "negative"}`}>
                 {coin.price_change_percentage_24h.toFixed(2)}%
               </p>
-
-              {/* Mini Chart (Bottom-Right) */}
               <div className="chart-container">
                 <MiniChart sparkline={coin.sparkline_in_7d.price} />
               </div>
@@ -81,7 +85,7 @@ function MarketTrend() {
 
 function MiniChart({ sparkline }) {
   const data = {
-    labels: Array(sparkline.length).fill(""), // Placeholder labels
+    labels: Array(sparkline.length).fill(""),
     datasets: [
       {
         data: sparkline,

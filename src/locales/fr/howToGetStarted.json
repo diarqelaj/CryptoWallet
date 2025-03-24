@@ -1,0 +1,22 @@
+{
+    "howToGetStarted": {
+      "title": "Comment commencer",
+      "description": "Un moyen simple et facile de commencer à investir dans la cryptomonnaie",
+      "button": "Commencer",
+      "steps": {
+        "account": {
+          "title": "Créer votre compte",
+          "description": "Votre compte et votre identité personnelle sont garantis sûrs."
+        },
+        "bank": {
+          "title": "Connecter le compte bancaire",
+          "description": "Connectez le compte bancaire pour commencer les transactions."
+        },
+        "portfolio": {
+          "title": "Commencez à construire un portefeuille",
+          "description": "Achetez et vendez des devises populaires et suivez-les."
+        }
+      }
+    }
+  }
+  

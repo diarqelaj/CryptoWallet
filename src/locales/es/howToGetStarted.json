@@ -1,0 +1,20 @@
+{
+    "title": "Cómo empezar",
+    "description": "Una manera simple y fácil de comenzar tu inversión en criptomonedas",
+    "button": "Comenzar",
+    "steps": {
+      "account": {
+        "title": "Crea tu cuenta",
+        "description": "Tu cuenta e identidad personal están garantizadas como seguras."
+      },
+      "bank": {
+        "title": "Conectar cuenta bancaria",
+        "description": "Conecta tu cuenta bancaria para comenzar a realizar transacciones."
+      },
+      "portfolio": {
+        "title": "Empieza a construir tu portafolio",
+        "description": "Compra y vende monedas populares y haz seguimiento de ellas."
+      }
+    }
+  }
+  

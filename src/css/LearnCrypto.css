@@ -1,99 +1,146 @@
 .learn-crypto {
   text-align: center;
-  padding: 40px 30px;
-  color: white;
-  background-color: inherit;
+  padding: auto;
+  color: var(--text-color); 
+  background-color: var(--bg-gradient);
   margin: 0;
-  width: 100%; /* Ensure it takes full width */
-  
-}
-.learn-crypto .card {
-  width: 296px;
-  height: 391px;
+  width: 100%;
 }
 
 
-/* Reset any browser default margins on the section */
 .learn-crypto h2,
-.learn-crypto p {
+.learn-crypto p
+.title {
   margin: 0;
-  padding: 10px;
+  padding: 25px 20px;
 }
 
-/* 🔥 The Grid - Now fully responsive & flexible */
+
 .learn-crypto .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 Equal Columns */
-  grid-auto-rows: auto; /* Adjusts row height dynamically */
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: auto;
   gap: 26px;
-  width: 1262px; /* Ensures it fits within page */
+  width: 100%; 
+  max-width: 1262px; 
   margin: 20px auto;
   justify-content: center;
-  
 }
-
-/* Standard Card Styling */
 .learn-crypto .card {
   position: relative;
   width: 100%;
-  aspect-ratio: 296 / 391; /* Keeps card proportions */
+  max-width: 296px;
+  height: 391px;
   border-radius: 18px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto; 
   padding: 0;
+  background: var(--card-bg); 
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* 🔥 Image takes EXACTLY half the height */
+
+
 .learn-crypto .card .image {
   width: 100%;
-  height: 50%; /* Ensure it takes up half */
+  height: 50%; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* 📌 Content takes EXACTLY half the height */
+
 .learn-crypto .card .content {
   width: 100%;
-  height: 50%; /* Takes the other half */
+  height: 50%;
   padding: 20px;
-  background: inherit;
-  color: white;
+  background: var(--card-bg); 
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 28px;
 }
-/* 🎯 Featured Card (NFT Article) */
+
+
+.learn-crypto .card .category {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--positive-color);
+  letter-spacing: 0.5px;
+}
+
+
+.learn-crypto .card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+.learn-crypto .card.featured p {
+  font-size: 0.9rem;
+  color: var(--price-text);
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+
+.learn-crypto .card .content h3,
+.learn-crypto .card .content p {
+  flex-grow: 1; 
+}
+
+.learn-crypto .card.featured .content {
+  justify-content: flex-start; 
+  gap: 10px;
+}
+
+
 .learn-crypto .card.featured {
   grid-column: span 2;
   aspect-ratio: 2 / 1;
+  max-width: 600px;
 }
 
-/* Remove full-card overlays */
-.learn-crypto .card .overlay {
-  display: none; /* No more full image darkness */
-}
 
-/* Hover Effect */
 .learn-crypto .card:hover {
   transform: scale(1.03);
+  box-shadow: 0px 10px 25px var(--card-shadow);
 }
 
 
-/* Fix "See All Articles" */
 .see-all {
   margin-top: 20px;
   text-decoration: none;
-  color: #6a0dad;
+  color: var(--button-bg);
   font-weight: bold;
 }
+
 .see-all:hover {
   text-decoration: underline;
 }
 
-/* 🎯 Responsive Grid Fixes */
+[data-theme="dark"] .card {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] .card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1100px) {
+  .learn-crypto .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .learn-crypto .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -101,6 +148,7 @@
 
   .learn-crypto .card.featured {
     grid-column: span 2;
+    max-width: 100%;
   }
 }
 
@@ -111,6 +159,6 @@
 
   .learn-crypto .card.featured {
     grid-column: span 1;
-    aspect-ratio: 1.5; /* Keeps proportional */
+    aspect-ratio: 1.5;
   }
 }

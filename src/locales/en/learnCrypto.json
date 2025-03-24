@@ -1,0 +1,37 @@
+{
+    "title": "Learn About Cryptocurrency",
+    "subtitle": "Learn all about cryptocurrency to start investing",
+    "seeAll": "See All Articles",
+    "articles": [
+      {
+        "title": "All about Investing in NFTs and related risks",
+        "category": "CRYPTO BASIC",
+        "description": "Cryptocurrencies are basically digital assets. It is secured by cryptography..."
+      },
+      {
+        "title": "What is cryptocurrency? all you need to know",
+        "category": "CRYPTO BASIC"
+      },
+      {
+        "title": "Can crypto really replace your bank account?",
+        "category": "CRYPTO BASIC"
+      },
+      {
+        "title": "How to setup crypto wallet in your account",
+        "category": "TIPS & TRICKS"
+      },
+      {
+        "title": "The fact about bitcoin must you know",
+        "category": "CRYPTO BASIC"
+      },
+      {
+        "title": "When is the best time to invest in crypto?",
+        "category": "TIPS & TRICKS"
+      },
+      {
+        "title": "What is DeFi? Inside the Wild West of Cryptocurrency.",
+        "category": "TIPS & TRICKS"
+      }
+    ]
+  }
+  

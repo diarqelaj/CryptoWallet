@@ -1,0 +1,22 @@
+{
+    "howToGetStarted": {
+      "title": "How To Get Started",
+      "description": "Simple and easy way to start your investment in cryptocurrency",
+      "button": "Get Started",
+      "steps": {
+        "account": {
+          "title": "Create Your Account",
+          "description": "Your account and personal identity are guaranteed safe."
+        },
+        "bank": {
+          "title": "Connect Bank Account",
+          "description": "Connect the bank account to start transactions."
+        },
+        "portfolio": {
+          "title": "Start Build Portfolio",
+          "description": "Buy and sell popular currencies and keep track of them."
+        }
+      }
+    }
+  }
+  

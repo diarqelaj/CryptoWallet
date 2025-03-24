@@ -1,4 +1,3 @@
-// src/pages/GetStarted.js
 import "../css/GetStarted.css";
 
 function GetStarted() {

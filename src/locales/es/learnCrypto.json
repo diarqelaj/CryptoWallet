@@ -1,0 +1,37 @@
+{
+    "title": "Aprende sobre criptomonedas",
+    "subtitle": "Aprende todo sobre las criptomonedas para empezar a invertir",
+    "seeAll": "Ver todos los artículos",
+    "articles": [
+      {
+        "title": "Todo sobre la inversión en NFT y sus riesgos",
+        "category": "BÁSICO DE CRIPTO",
+        "description": "Las criptomonedas son básicamente activos digitales. Está asegurado por criptografía..."
+      },
+      {
+        "title": "¿Qué es una criptomoneda? Todo lo que necesitas saber",
+        "category": "BÁSICO DE CRIPTO"
+      },
+      {
+        "title": "¿Puede la criptomoneda reemplazar tu cuenta bancaria?",
+        "category": "BÁSICO DE CRIPTO"
+      },
+      {
+        "title": "Cómo configurar una billetera cripto en tu cuenta",
+        "category": "CONSEJOS Y TRUCOS"
+      },
+      {
+        "title": "El hecho sobre Bitcoin que debes saber",
+        "category": "BÁSICO DE CRIPTO"
+      },
+      {
+        "title": "¿Cuándo es el mejor momento para invertir en cripto?",
+        "category": "CONSEJOS Y TRUCOS"
+      },
+      {
+        "title": "¿Qué es DeFi? Dentro del Salvaje Oeste de las Criptomonedas.",
+        "category": "CONSEJOS Y TRUCOS"
+      }
+    ]
+  }
+  

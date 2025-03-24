@@ -10,7 +10,7 @@
 }
 
 [data-theme="light"] .navbar {
-  background: rgba(255, 255, 255, 0.7);
+  background: inherit;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -44,7 +44,7 @@
 .lang-btn {
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--text-color);
   font-size: 16px;
   cursor: pointer;
 }
@@ -52,25 +52,23 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Style the dropdown options */
+
 .lang-btn option {
-  background-color: black; /* Dark mode background */
-  color: white; /* White text */
+  background-color: black;
+  color: var(--text-color);
   font-size: 14px;
   padding: 10px;
 }
 
-/* Style the dropdown options in light mode */
 [data-theme="light"] .lang-btn option {
   background-color: white;
-  color: black;
+  color: var(--text-color);
 }
 
-/* Ensure dropdown has a smooth transition */
 .lang-btn::-ms-expand {
-  display: none; /* Removes the default arrow in Internet Explorer */
+  display: none; 
 }
-/* 🔥 Theme Toggle Button */
+
 .theme-toggle {
   background: transparent;
   border: none;
@@ -84,7 +82,6 @@
   transform: scale(1.1);
 }
 
-/* Login Button */
 .login-btn {
   background: var(--button-bg);
   padding: 10px 18px;

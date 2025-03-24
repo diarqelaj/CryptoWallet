@@ -1,0 +1,24 @@
+{
+    "title": "Fonctionnalités Incroyables de CryptoCap",
+    "description": "Découvrez des fonctionnalités sensationnelles pour préparer votre meilleur investissement en cryptomonnaie.",
+    "features": {
+      "portfolio": {
+        "title": "Gérer le Portefeuille",
+        "description": "Achetez et vendez des devises numériques populaires, et suivez-les en un seul endroit."
+      },
+      "security": {
+        "title": "Protégé Sécuritairement",
+        "description": "Tous les soldes en espèces sont couverts par une assurance FDIC, jusqu'à un maximum de 250 000 $."
+      },
+      "variety": {
+        "title": "Variété de Cryptomonnaies",
+        "description": "Prend en charge une variété des devises numériques les plus populaires et toujours mises à jour."
+      },
+      "learning": {
+        "title": "Apprendre les Meilleures Pratiques",
+        "description": "Facile de comprendre le fonctionnement de la cryptomonnaie et convivial pour les débutants."
+      }
+    },
+    "seeMore": "Voir Explication →"
+  }
+  
