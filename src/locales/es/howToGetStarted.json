@@ -1,4 +1,5 @@
 {
+  "howToGetStarted": {
     "title": "Cómo empezar",
     "description": "Una manera simple y fácil de comenzar tu inversión en criptomonedas",
     "button": "Comenzar",
@@ -17,4 +18,4 @@
       }
     }
   }
-  
+}

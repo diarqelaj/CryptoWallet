@@ -13,10 +13,9 @@
   padding: 20px;
 }
 
-/* ✅ Responsive Grid Layout */
 .learn-crypto .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* ✅ 4 Columns on Large Screens */
+  grid-template-columns: repeat(4, 1fr); 
   grid-auto-rows: auto;
   gap: 26px;
   width: 100%;
@@ -24,8 +23,6 @@
   margin: 20px auto;
   justify-content: center;
 }
-
-/* ✅ Card Styling */
 .learn-crypto .card {
   position: relative;
   width: 100%;
@@ -44,16 +41,15 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ✅ Card Image */
 .learn-crypto .card .image {
   width: 100%;
-  height: 45%; /* ✅ Slightly smaller for better spacing */
+  height: 45%; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* ✅ Card Content */
+
 .learn-crypto .card .content {
   width: 100%;
   height: 55%;
@@ -65,7 +61,6 @@
   justify-content: space-between;
 }
 
-/* ✅ Category Tag */
 .learn-crypto .card .category {
   font-size: 0.85rem;
   font-weight: bold;
@@ -74,7 +69,6 @@
   letter-spacing: 0.5px;
 }
 
-/* ✅ Card Title */
 .learn-crypto .card h3 {
   font-size: 1.1rem;
   font-weight: bold;
@@ -82,21 +76,17 @@
   margin: 0;
 }
 
-/* ✅ Featured Card Adjustments */
 .learn-crypto .card.featured {
   grid-column: span 2;
   max-width: 100%;
   aspect-ratio: 2 / 1;
-  height: auto;
+  max-height: 100%;
 }
-
-/* ✅ Hover Effect */
 .learn-crypto .card:hover {
   transform: scale(1.03);
   box-shadow: 0px 10px 25px var(--card-shadow);
 }
 
-/* ✅ See All Button */
 .see-all {
   margin-top: 20px;
   text-decoration: none;
@@ -108,7 +98,6 @@
   text-decoration: underline;
 }
 
-/* ✅ Dark & Light Mode Adjustments */
 [data-theme="dark"] .card {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
 }
@@ -116,17 +105,15 @@
 [data-theme="light"] .card {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* ✅ Responsive Design */
 @media (max-width: 1024px) {
   .learn-crypto .grid {
-    grid-template-columns: repeat(3, 1fr); /* ✅ 3 Columns */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 900px) {
   .learn-crypto .grid {
-    grid-template-columns: repeat(2, 1fr); /* ✅ 2 Columns */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
   }
 
@@ -144,26 +131,26 @@
 
 @media (max-width: 600px) {
   .learn-crypto .grid {
-    display: flex;  /* ✅ Change from grid to flex */
+    display: flex;  
     flex-direction: column;
-    align-items: center; /* ✅ Center the cards */
-    gap: 20px;  /* ✅ Add better spacing */
+    align-items: center; 
+    gap: 20px; 
   }
 
   .learn-crypto .card {
-    max-width: 95%; /* ✅ Make them more fluid */
-    height: auto; /* ✅ Adjust for content */
+    max-width: 95%; 
+    height: auto;
     display: flex;
-    flex-direction: row; /* ✅ Make them horizontal */
+    flex-direction: row; 
     align-items: center;
     padding: 12px;
-    gap: 12px; /* ✅ Space between image & text */
+    gap: 12px;
   }
 
   .learn-crypto .card .image {
-    width: 90px; /* ✅ Thumbnail size */
+    width: 90px;
     height: 90px;
-    border-radius: 10px; /* ✅ Keep it clean */
+    border-radius: 10px; 
   }
 
   .learn-crypto .card .content {
@@ -171,12 +158,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left; /* ✅ Align text properly */
+    text-align: left; 
     padding: 0;
   }
 
   .learn-crypto .card h3 {
-    font-size: 1rem; /* ✅ Reduce size so it fits */
+    font-size: 1rem; 
     margin: 0;
     line-height: 1.3;
   }
@@ -186,8 +173,9 @@
   }
 
   .learn-crypto .card.featured {
-    flex-direction: column; /* ✅ Keep featured card big */
+    flex-direction: column; 
     align-items: center;
     max-width: 95%;
+    height:auto;
   }
 }

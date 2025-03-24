@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import "../css/HowToGetStarted.css";
 import { FaUserShield, FaCreditCard, FaChartLine } from "react-icons/fa";
-import "../i18n"; // Ensure i18n is imported
+import "../i18n"; 
 
 function HowToGetStarted() {
-  const { t } = useTranslation("howToGetStarted"); // Ensure namespace is correctly referenced
+  const { t } = useTranslation("howToGetStarted"); 
 
   return (
     <section className="how-to-get-started">
