@@ -1,5 +1,5 @@
 // src/pages/GetStarted.js
-import "./GetStarted.css";
+import "../css/GetStarted.css";
 
 function GetStarted() {
   return (

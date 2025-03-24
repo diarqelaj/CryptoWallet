@@ -1,7 +1,7 @@
 // src/components/MarketUpdate.js
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./MarketUpdate.css";
+import "../css/MarketUpdate.css";
 import { FaSearch } from "react-icons/fa";
 import { Sparklines, SparklinesLine } from "react-sparklines";
 

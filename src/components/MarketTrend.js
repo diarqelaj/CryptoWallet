@@ -10,7 +10,7 @@ import {
   CategoryScale,
 } from "chart.js";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import "./MarketTrend.css";
+import "../css/MarketTrend.css";
 
 ChartJS.register(LineElement, PointElement, LinearScale, Title, Tooltip, CategoryScale);
 

@@ -1,4 +1,4 @@
-import "./HowToGetStarted.css";
+import "../css/HowToGetStarted.css";
 import { FaUserShield, FaCreditCard, FaChartLine } from "react-icons/fa";
 
 function HowToGetStarted() {

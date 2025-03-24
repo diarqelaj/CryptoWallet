@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { FaMoon, FaSun, FaGlobe } from "react-icons/fa";
-import "./Navbar.css";
+import "../css/Navbar.css";
 
 function Navbar() {
   const { t, i18n } = useTranslation();

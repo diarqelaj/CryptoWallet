@@ -1,5 +1,5 @@
 import React from "react";
-import "./LearnCrypto.css";
+import "../css/LearnCrypto.css";
 
 // Import local images
 import nftImage from "../images/nftcover.jpg";

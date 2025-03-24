@@ -4,12 +4,12 @@ import Features from "../components/Features";
 import MarketUpdate from "../components/MarketUpdate";
 import HowToGetStarted from "../components/HowToGetStarted";
 import LearnCrypto from "../components/LearnCrypto";
-import "../components/MarketTrend.css";
-import "../components/Features.css";
-import "../components/MarketUpdate.css";
-import "../components/HowToGetStarted.css";
-import "../components/LearnCrypto.css";
-import "./Home.css";
+import "../css/MarketTrend.css";
+import "../css/Features.css";
+import "../css/MarketUpdate.css";
+import "../css/HowToGetStarted.css";
+import "../css/LearnCrypto.css";
+import "../css/Home.css";
 
 function Home() {
   return (

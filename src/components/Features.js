@@ -1,5 +1,5 @@
 // src/components/Features.js
-import "./Features.css";
+import "../css/Features.css";
 import { FaWallet, FaShieldAlt, FaBitcoin, FaBook } from "react-icons/fa"; // Importing Icons
 
 function Features() {
