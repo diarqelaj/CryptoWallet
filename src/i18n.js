@@ -2,7 +2,6 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-// Import translation files
 import learnCryptoEN from "./locales/en/learnCrypto.json";
 import learnCryptoES from "./locales/es/learnCrypto.json";
 import learnCryptoFR from "./locales/fr/learnCrypto.json";
@@ -35,6 +34,11 @@ import businessesEN from "./locales/en/businesses.json";
 import businessesES from "./locales/es/businesses.json";  
 import businessesFR from "./locales/fr/businesses.json";  
 
+import marketEN from "./locales/en/market.json";
+import marketES from "./locales/es/market.json";
+import marketFR from "./locales/fr/market.json";
+
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -49,6 +53,7 @@ i18n
         howToGetStarted: howToGetStartedEN,
         features: featuresEN,
         businesses: businessesEN,
+        market: marketEN
       },
       es: {
         learnCrypto: learnCryptoES,
@@ -58,7 +63,8 @@ i18n
         marketUpdate: marketUpdateES,
         howToGetStarted: howToGetStartedES,
         features: featuresES,
-        businesses: businessesES, 
+        businesses: businessesES,
+        market: marketES
       },
       fr: {
         learnCrypto: learnCryptoFR,
@@ -69,6 +75,7 @@ i18n
         howToGetStarted: howToGetStartedFR,
         features: featuresFR,
         businesses: businessesFR, 
+        market: marketFR
       }
     },
     fallbackLng: "en",
@@ -80,7 +87,8 @@ i18n
       "marketUpdate",
       "howToGetStarted",
       "features",
-      "businesses" 
+      "businesses",
+      "market" 
     ],
     defaultNS: "marketUpdate",
     detection: {

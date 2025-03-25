@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import GetStarted from "./pages/GetStarted";
 import Navbar from "./components/Navbar";
 import Businesses from "./pages/Businesses";
+import Market from "./pages/Market";
 import TradingViewWidget from "./pages/TradingViewWidget"; 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/businesses" element={<Businesses />} />
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/trade" element={<TradingViewWidget theme={theme} />} />
+          <Route path="/market" element={<Market />} />
         </Routes>
       </Router>
     </div>
