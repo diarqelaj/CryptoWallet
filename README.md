@@ -31,14 +31,14 @@ Multilingual UI	![image](https://github.com/user-attachments/assets/91c7534a-991
 
 
 
-##🚀 Roadmap & Future Plans
+## 🚀 Roadmap & Future Plans
 🔗 API Enhancements – Connect with more exchanges
 
-##📊 Advanced Analytics – Historical data visualization
+## 📊 Advanced Analytics – Historical data visualization
 
 
-##🤝 Contributing
+## 🤝 Contributing
 Want to improve CryptoCap? Feel free to fork the repo and submit a pull request! 🚀
 
-##⭐ Show Some Love
+## ⭐ Show Some Love
 If you like this project, give it a star ⭐ on GitHub!
