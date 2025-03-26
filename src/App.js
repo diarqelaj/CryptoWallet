@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Businesses from "./pages/Businesses";
 import Market from "./pages/Market";
 import TradingViewWidget from "./pages/TradingViewWidget"; 
+import Learn from "./pages/Learn";
+
 
 function App() {
   const themeContext = useContext(ThemeContext);
@@ -28,6 +30,7 @@ function App() {
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/trade" element={<TradingViewWidget theme={theme} />} />
           <Route path="/market" element={<Market />} />
+          <Route path="/learn" element={<Learn />} />
         </Routes>
       </Router>
     </div>

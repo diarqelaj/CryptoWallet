@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "../css/Businesses.css";
-
 import partner1 from "../images/partner1.png";
 import partner2 from "../images/partner2.png";
 import heroVideo from "../videos/hero-bg.mp4"; 

@@ -1,5 +1,3 @@
-/* Global Styles - Ensures Consistent Background Across All Pages */
-/* Remove unwanted scrollbars */
 html, body {
   overflow-x: hidden;
   box-sizing: border-box;
