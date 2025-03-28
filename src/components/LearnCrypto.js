@@ -16,6 +16,7 @@ const LearnCrypto = () => {
   const images = [nftImage, cryptoImage, bankingImage, walletImage, bitcoinImage, marketImage, defiImage];
 
   const articles = t("articles", { returnObjects: true }); 
+  const paragraphs = t("paragraphs", { returnObjects: true }); 
 
   return (
     <section className="learn-crypto">
@@ -29,7 +30,7 @@ const LearnCrypto = () => {
             <div className="content">
               <span className="category">{article.category}</span>
               <h3>{article.title}</h3>
-              {index === 0 && <p>{article.description}</p>}
+              <p>{paragraphs[index]}</p> {/* 🔥 Add corresponding paragraph */}
             </div>
           </div>
         ))}
