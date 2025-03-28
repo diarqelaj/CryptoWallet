@@ -1,13 +1,6 @@
+
 html, body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
-body {
-  background: radial-gradient(circle, #310046, #190029);
-  color: white;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  width: 100%;
-
-}

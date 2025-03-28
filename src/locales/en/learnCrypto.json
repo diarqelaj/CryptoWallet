@@ -1,37 +1,47 @@
 {
-    "title": "Learn About Cryptocurrency",
-    "subtitle": "Learn all about cryptocurrency to start investing",
-    "seeAll": "See All Articles",
-    "articles": [
-      {
-        "title": "All about Investing in NFTs and related risks",
-        "category": "CRYPTO BASIC",
-        "description": "Cryptocurrencies are basically digital assets. It is secured by cryptography..."
-      },
-      {
-        "title": "What is cryptocurrency? all you need to know",
-        "category": "CRYPTO BASIC"
-      },
-      {
-        "title": "Can crypto really replace your bank account?",
-        "category": "CRYPTO BASIC"
-      },
-      {
-        "title": "How to setup crypto wallet in your account",
-        "category": "TIPS & TRICKS"
-      },
-      {
-        "title": "The fact about bitcoin must you know",
-        "category": "CRYPTO BASIC"
-      },
-      {
-        "title": "When is the best time to invest in crypto?",
-        "category": "TIPS & TRICKS"
-      },
-      {
-        "title": "What is DeFi? Inside the Wild West of Cryptocurrency.",
-        "category": "TIPS & TRICKS"
-      }
-    ]
-  }
-  
+  "title": "Learn About Cryptocurrency",
+  "subtitle": "Learn all about cryptocurrency to start investing",
+  "seeAll": "See All Articles",
+  "exploreTitle": "Expand Your Crypto Knowledge",
+  "exploreDescription": "Understanding cryptocurrency is the first step to mastering the future of digital finance. Explore detailed insights on each topic.",
+  "articles": [
+    {
+      "title": "All about Investing in NFTs and related risks",
+      "category": "CRYPTO BASIC",
+      "description": "Cryptocurrencies are basically digital assets. It is secured by cryptography..."
+    },
+    {
+      "title": "What is cryptocurrency? all you need to know",
+      "category": "CRYPTO BASIC"
+    },
+    {
+      "title": "Can crypto really replace your bank account?",
+      "category": "CRYPTO BASIC"
+    },
+    {
+      "title": "How to setup crypto wallet in your account",
+      "category": "TIPS & TRICKS"
+    },
+    {
+      "title": "The fact about bitcoin must you know",
+      "category": "CRYPTO BASIC"
+    },
+    {
+      "title": "When is the best time to invest in crypto?",
+      "category": "TIPS & TRICKS"
+    },
+    {
+      "title": "What is DeFi? Inside the Wild West of Cryptocurrency.",
+      "category": "TIPS & TRICKS"
+    }
+  ],
+  "paragraphs": [
+    "NFTs are digital assets that have revolutionized the way we own and trade items on the blockchain.",
+    "Cryptocurrency is a decentralized digital currency that allows secure and anonymous transactions.",
+    "Many experts debate whether crypto can fully replace traditional banks, and the answer isn't simple.",
+    "Setting up a crypto wallet is the first step to securely managing and storing your digital assets.",
+    "Bitcoin, the first cryptocurrency, has a fascinating history filled with ups and downs.",
+    "Timing is everything in crypto investing—knowing when to buy or sell can make a big difference.",
+    "DeFi (Decentralized Finance) is transforming financial services by eliminating intermediaries."
+  ]
+}

@@ -6,6 +6,7 @@
     #080014;
 
   --text-color: white;
+  --lang-btn-c:black;
   --text-color-p: rgba(255, 255, 255, 0.664);
   --button-bg: rgb(5, 175, 133);
   --button-hover: #0d6650;
@@ -16,6 +17,7 @@
   --external-link-bg: rgba(255, 255, 255, 0.12);
   --price-text: #d1d1d1;
   --positive-color: #00ff99; 
+  --lang-btn: inherit;
   --modal: rgb(22, 20, 49) ;
   --hero-bg:rgba(0, 0, 0, 0.295);
   --b-cta:rgb(22, 20, 49) ;
@@ -31,6 +33,7 @@
 
   --text-color: #000000;
   --text-color-p:#00000083;
+  --lang-btn-c:black;
   --button-bg: rgb(5, 175, 133);
   --button-hover: #119473;
   --card-bg: inherit;

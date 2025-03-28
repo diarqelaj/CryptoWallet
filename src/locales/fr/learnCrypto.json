@@ -1,37 +1,47 @@
 {
-    "title": "Apprenez tout sur les cryptomonnaies",
-    "subtitle": "Apprenez tout sur les cryptomonnaies pour commencer à investir",
-    "seeAll": "Voir tous les articles",
-    "articles": [
-      {
-        "title": "Tout sur l'investissement dans les NFT et les risques associés",
-        "category": "BASIQUE CRYPTO",
-        "description": "Les cryptomonnaies sont essentiellement des actifs numériques. Elles sont sécurisées par la cryptographie..."
-      },
-      {
-        "title": "Qu'est-ce qu'une cryptomonnaie ? Tout ce que vous devez savoir",
-        "category": "BASIQUE CRYPTO"
-      },
-      {
-        "title": "Les cryptos peuvent-elles vraiment remplacer votre compte bancaire ?",
-        "category": "BASIQUE CRYPTO"
-      },
-      {
-        "title": "Comment configurer un portefeuille crypto sur votre compte",
-        "category": "ASTUCES & CONSEILS"
-      },
-      {
-        "title": "Les faits essentiels sur le Bitcoin que vous devez connaître",
-        "category": "BASIQUE CRYPTO"
-      },
-      {
-        "title": "Quel est le meilleur moment pour investir dans la crypto ?",
-        "category": "ASTUCES & CONSEILS"
-      },
-      {
-        "title": "Qu'est-ce que la DeFi ? Plongée dans le Far West des cryptomonnaies.",
-        "category": "ASTUCES & CONSEILS"
-      }
-    ]
-  }
-  
+  "title": "Apprenez Tout sur la Cryptomonnaie",
+  "subtitle": "Découvrez tout sur la cryptomonnaie pour commencer à investir",
+  "seeAll": "Voir Tous les Articles",
+  "exploreTitle": "Élargissez Vos Connaissances en Crypto",
+  "exploreDescription": "Comprendre la cryptomonnaie est la première étape pour maîtriser l’avenir de la finance numérique. Explorez des analyses détaillées sur chaque sujet.",
+  "articles": [
+    {
+      "title": "Tout sur l’investissement dans les NFTs et les risques associés",
+      "category": "CRYPTO BASIQUE",
+      "description": "Les cryptomonnaies sont essentiellement des actifs numériques. Elles sont sécurisées par cryptographie..."
+    },
+    {
+      "title": "Qu’est-ce qu’une cryptomonnaie ? Tout ce que vous devez savoir",
+      "category": "CRYPTO BASIQUE"
+    },
+    {
+      "title": "Les cryptos peuvent-elles vraiment remplacer votre compte bancaire ?",
+      "category": "CRYPTO BASIQUE"
+    },
+    {
+      "title": "Comment configurer un portefeuille crypto sur votre compte",
+      "category": "ASTUCES & CONSEILS"
+    },
+    {
+      "title": "Les faits essentiels sur le Bitcoin que vous devez connaître",
+      "category": "CRYPTO BASIQUE"
+    },
+    {
+      "title": "Quel est le meilleur moment pour investir dans les cryptos ?",
+      "category": "ASTUCES & CONSEILS"
+    },
+    {
+      "title": "Qu’est-ce que la DeFi ? Plongée dans le Far West des Cryptos",
+      "category": "ASTUCES & CONSEILS"
+    }
+  ],
+  "paragraphs": [
+    "Les NFTs sont des actifs numériques qui ont révolutionné la manière dont nous possédons et échangeons des objets sur la blockchain.",
+    "La cryptomonnaie est une monnaie numérique décentralisée qui permet des transactions sécurisées et anonymes.",
+    "De nombreux experts débattent de la possibilité que les cryptos remplacent complètement les banques traditionnelles, et la réponse n’est pas simple.",
+    "Configurer un portefeuille crypto est la première étape pour gérer et stocker vos actifs numériques en toute sécurité.",
+    "Le Bitcoin, première cryptomonnaie, a une histoire fascinante marquée par des hauts et des bas.",
+    "Le timing est crucial dans l’investissement en cryptos : savoir quand acheter ou vendre peut faire une énorme différence.",
+    "La DeFi (Finance Décentralisée) transforme les services financiers en éliminant les intermédiaires."
+  ]
+}

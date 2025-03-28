@@ -133,12 +133,33 @@
   gap: 15px;
 }
 .lang-btn {
-  background-color: var(--modal);
+  background:inherit;
   border: none;
   color: var(--text-color);
   font-size: 16px;
   cursor: pointer;
+  padding: 8px 30px 8px 12px;
+  border-radius: 5px;
+  outline: none;
+  appearance: none;
+  position: relative;
 }
+
+.lang-btn::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.lang-btn option {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 10px;
+}
+
 .mobile-actions{
   display: none;
 }
@@ -164,5 +185,5 @@
   transition: background 0.3s ease;
 }
 .login-btn:hover {
-  background: var(--button-hover);
+  background-color: var(--button-hover);
 }

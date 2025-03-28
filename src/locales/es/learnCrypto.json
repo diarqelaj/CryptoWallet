@@ -1,37 +1,47 @@
 {
-    "title": "Aprende sobre criptomonedas",
-    "subtitle": "Aprende todo sobre las criptomonedas para empezar a invertir",
-    "seeAll": "Ver todos los artículos",
-    "articles": [
-      {
-        "title": "Todo sobre la inversión en NFT y sus riesgos",
-        "category": "BÁSICO DE CRIPTO",
-        "description": "Las criptomonedas son básicamente activos digitales. Está asegurado por criptografía..."
-      },
-      {
-        "title": "¿Qué es una criptomoneda? Todo lo que necesitas saber",
-        "category": "BÁSICO DE CRIPTO"
-      },
-      {
-        "title": "¿Puede la criptomoneda reemplazar tu cuenta bancaria?",
-        "category": "BÁSICO DE CRIPTO"
-      },
-      {
-        "title": "Cómo configurar una billetera cripto en tu cuenta",
-        "category": "CONSEJOS Y TRUCOS"
-      },
-      {
-        "title": "El hecho sobre Bitcoin que debes saber",
-        "category": "BÁSICO DE CRIPTO"
-      },
-      {
-        "title": "¿Cuándo es el mejor momento para invertir en cripto?",
-        "category": "CONSEJOS Y TRUCOS"
-      },
-      {
-        "title": "¿Qué es DeFi? Dentro del Salvaje Oeste de las Criptomonedas.",
-        "category": "CONSEJOS Y TRUCOS"
-      }
-    ]
-  }
-  
+  "title": "Aprende Sobre Criptomonedas",
+  "subtitle": "Aprende todo sobre las criptomonedas para comenzar a invertir",
+  "seeAll": "Ver Todos los Artículos",
+  "exploreTitle": "Expande tu Conocimiento Cripto",
+  "exploreDescription": "Comprender las criptomonedas es el primer paso para dominar el futuro de las finanzas digitales. Explora información detallada sobre cada tema.",
+  "articles": [
+    {
+      "title": "Todo sobre la inversión en NFTs y los riesgos asociados",
+      "category": "CRIPTO BÁSICO",
+      "description": "Las criptomonedas son básicamente activos digitales. Están protegidas por criptografía..."
+    },
+    {
+      "title": "¿Qué es una criptomoneda? Todo lo que necesitas saber",
+      "category": "CRIPTO BÁSICO"
+    },
+    {
+      "title": "¿Puede la criptomoneda realmente reemplazar tu cuenta bancaria?",
+      "category": "CRIPTO BÁSICO"
+    },
+    {
+      "title": "Cómo configurar una billetera cripto en tu cuenta",
+      "category": "CONSEJOS & TRUCOS"
+    },
+    {
+      "title": "Datos esenciales sobre Bitcoin que debes conocer",
+      "category": "CRIPTO BÁSICO"
+    },
+    {
+      "title": "¿Cuál es el mejor momento para invertir en cripto?",
+      "category": "CONSEJOS & TRUCOS"
+    },
+    {
+      "title": "¿Qué es DeFi? Dentro del Salvaje Oeste de las Criptomonedas",
+      "category": "CONSEJOS & TRUCOS"
+    }
+  ],
+  "paragraphs": [
+    "Los NFTs son activos digitales que han revolucionado la forma en que poseemos e intercambiamos artículos en la blockchain.",
+    "La criptomoneda es una moneda digital descentralizada que permite transacciones seguras y anónimas.",
+    "Muchos expertos debaten si la criptomoneda puede reemplazar completamente a los bancos tradicionales, y la respuesta no es sencilla.",
+    "Configurar una billetera cripto es el primer paso para gestionar y almacenar tus activos digitales de manera segura.",
+    "Bitcoin, la primera criptomoneda, tiene una historia fascinante llena de altibajos.",
+    "El tiempo lo es todo en la inversión en cripto: saber cuándo comprar o vender puede marcar una gran diferencia.",
+    "DeFi (Finanzas Descentralizadas) está transformando los servicios financieros al eliminar intermediarios."
+  ]
+}
