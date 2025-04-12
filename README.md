@@ -1,8 +1,8 @@
-# CryptoCap 🚀 - Frontend Focused (Progress 85%)
+# CryptoCap 🚀 - Frontend Focused
 
 A sleek **cryptocurrency portfolio tracker** built with **React**.  
 This project prioritizes a **polished user interface**, featuring **multilingual support, real-time market data, and theme customization**.
-
+## Live Preview : https://crypto-wallet-delta-two.vercel.app/
 ---
 
 ## ✨ Features
